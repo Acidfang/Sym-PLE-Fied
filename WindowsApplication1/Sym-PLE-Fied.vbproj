@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EC44EFB-131A-4AE8-B6AA-B9404B2662B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PaperworkReduction.My.MyApplication</StartupObject>
+    <RootNamespace>PaperworkReduction</RootNamespace>
+    <AssemblyName>Sym-PLE-Fied</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\sealedair.corp\porirua\Production\Printing Dept\Printing %28Prod logon%29\Data\Other Stuff\Films Upgrade\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>1</UpdateInterval>
+    <UpdateIntervalUnits>Hours</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <PublisherName>WLG Sealed Air</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>353</ApplicationRevision>
+    <ApplicationVersion>1.2.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sym-PLE-Fied.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sym-PLE-Fied.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F3FEE82F7F0D66BC7CFD100DFD7B242C3065303B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Sym-PLE-Fied_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="cls_ACSIS.vb" />
+    <Compile Include="cls_export_dt.vb" />
+    <Compile Include="CRs232.vb" />
+    <Compile Include="frm_item_info.Designer.vb">
+      <DependentUpon>frm_item_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_item_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ticket_info.Designer.vb">
+      <DependentUpon>frm_ticket_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ticket_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bag_checks.Designer.vb">
+      <DependentUpon>frm_bag_checks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bag_checks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_comments.Designer.vb">
+      <DependentUpon>frm_comments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_comments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_custom_job.Designer.vb">
+      <DependentUpon>frm_custom_job.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_custom_job.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_helper.Designer.vb">
+      <DependentUpon>frm_helper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_helper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_item_id.Designer.vb">
+      <DependentUpon>frm_item_id.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_item_id.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_job_status.Designer.vb">
+      <DependentUpon>frm_job_status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_job_status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_merge_roll.Designer.vb">
+      <DependentUpon>frm_merge_roll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_merge_roll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_navigation.Designer.vb">
+      <DependentUpon>frm_navigation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_navigation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_number_pad.Designer.vb">
+      <DependentUpon>frm_number_pad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_number_pad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_pallet.Designer.vb">
+      <DependentUpon>frm_pallet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_pallet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_plate_add.Designer.vb">
+      <DependentUpon>frm_plate_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_plate_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_plate_add_box.Designer.vb">
+      <DependentUpon>frm_plate_add_box.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_plate_add_box.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_plate_contents.Designer.vb">
+      <DependentUpon>frm_plate_contents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_plate_contents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_plate_removal.Designer.vb">
+      <DependentUpon>frm_plate_removal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_plate_removal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_plate_search.Designer.vb">
+      <DependentUpon>frm_plate_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_plate_search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reprint.Designer.vb">
+      <DependentUpon>frm_reprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_setup.Designer.vb">
+      <DependentUpon>frm_setup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_setup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_startup.Designer.vb">
+      <DependentUpon>frm_startup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_startup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_status.Designer.vb">
+      <DependentUpon>frm_status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod_dll_calls.vb" />
+    <Compile Include="mod_plate_locations.vb" />
+    <Compile Include="mod_scheduling.vb" />
+    <Compile Include="mod_common.vb" />
+    <Compile Include="cls_SQL_OLEDB.vb" />
+    <Compile Include="frm_downtime.Designer.vb">
+      <DependentUpon>frm_downtime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_downtime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod_enums.vb" />
+    <Compile Include="frm_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.Designer.vb">
+      <DependentUpon>frm_main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod_frm_main.vb" />
+    <Compile Include="mod_ini_handling.vb" />
+    <Compile Include="frm_material_info.Designer.vb">
+      <DependentUpon>frm_material_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_material_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_logon.Designer.vb">
+      <DependentUpon>frm_logon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_logon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frm_reject.Designer.vb">
+      <DependentUpon>frm_reject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_restore.Designer.vb">
+      <DependentUpon>frm_restore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_schedules.Designer.vb">
+      <DependentUpon>frm_schedules.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_schedules.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod_sendmessage_Constants.vb" />
+    <Compile Include="frm_settings.Designer.vb">
+      <DependentUpon>frm_settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_settings_admin.Designer.vb">
+      <DependentUpon>frm_settings_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_settings_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod_structs.vb" />
+    <Compile Include="frm_symple_times.Designer.vb">
+      <DependentUpon>frm_symple_times.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_symple_times.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="textbox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mod_variables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_item_info.resx">
+      <DependentUpon>frm_item_info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ticket_info.resx">
+      <DependentUpon>frm_ticket_info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bag_checks.resx">
+      <DependentUpon>frm_bag_checks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_comments.resx">
+      <DependentUpon>frm_comments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_custom_job.resx">
+      <DependentUpon>frm_custom_job.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_downtime.resx">
+      <DependentUpon>frm_downtime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_helper.resx">
+      <DependentUpon>frm_helper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_item_id.resx">
+      <DependentUpon>frm_item_id.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_job_status.resx">
+      <DependentUpon>frm_job_status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_main.resx">
+      <DependentUpon>frm_main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_material_info.resx">
+      <DependentUpon>frm_material_info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_logon.resx">
+      <DependentUpon>frm_logon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_merge_roll.resx">
+      <DependentUpon>frm_merge_roll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_navigation.resx">
+      <DependentUpon>frm_navigation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_number_pad.resx">
+      <DependentUpon>frm_number_pad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_pallet.resx">
+      <DependentUpon>frm_pallet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_plate_add.resx">
+      <DependentUpon>frm_plate_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_plate_add_box.resx">
+      <DependentUpon>frm_plate_add_box.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_plate_contents.resx">
+      <DependentUpon>frm_plate_contents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_plate_removal.resx">
+      <DependentUpon>frm_plate_removal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_plate_search.resx">
+      <DependentUpon>frm_plate_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reprint.resx">
+      <DependentUpon>frm_reprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_setup.resx">
+      <DependentUpon>frm_setup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_startup.resx">
+      <DependentUpon>frm_startup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_status.resx">
+      <DependentUpon>frm_status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reject.resx">
+      <DependentUpon>frm_reject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_restore.resx">
+      <DependentUpon>frm_restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_schedules.resx">
+      <DependentUpon>frm_schedules.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_settings.resx">
+      <DependentUpon>frm_settings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_settings_admin.resx">
+      <DependentUpon>frm_settings_admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_symple_times.resx">
+      <DependentUpon>frm_symple_times.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <Content Include="Resources\box labels.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\laminates.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\pallet label.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\plate order.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\production report.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\reject slip.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\roll tickets.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\rts slip.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\scheduling.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\summary.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Sym-PLE-Fied_1_TemporaryKey.pfx" />
+    <None Include="Sym-PLE-Fied_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changelog.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

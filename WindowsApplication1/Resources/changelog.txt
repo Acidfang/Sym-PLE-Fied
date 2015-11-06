@@ -1,0 +1,91 @@
+09/09/2015 
+
+
+20/04/2015
+Adding adjustments so other departments can be supported
+
+15/04/2015
+Fixed Sym-PLE log out system
+
+05/04/2015
+New navigation system in place
+
+31/03/2015
+Navigation overhaul 99% complete, few things to check over
+Testing of new system begins (not uploaded to workstations)
+
+04/03/2015
+Complete overhaul of menu navigation started, implemented customisation of how to navigate.
+
+13/03/2015
+More menu navigation recoding
+Adjusted Sym-PLE entry checks
+Fixed Sym-PLE time comparison - removed comma separator
+
+12/02/2015
+Fixed crash when logging in and out
+
+11/02/2015
+More code for menu navigation, GUI update
+Adjusted handling of 1 minute entry for pre-press
+
+10/02/2015
+Started adding customi]sation of menu navigation
+
+05/02/2015
+Fixed some code with multi rolls out
+
+04/02/2015
+Fixed problem when cycling jobs in the Sym-PLE time entry
+
+03/02/2015
+Added checks for symple time entry, item turns GREEN if it is detected in the system
+Added visual display if a job is final confirmed and symple time entered
+
+13/01/2015
+Added auto restoring if update during a run
+
+12/01/2015
+Adjusted summary to elimnate visble column selection bug
+Added Job/material numbers to "5 Whys" email
+Adjusted custom job adding so invalid jobs can not be entered
+Added remaining comparisons
+
+05/01/2015
+Adjusted logic with roll tickets grid item editing
+More adjustments for plate inventory control
+
+31/12/2014
+Added preliminary plate box adding
+Code adjustments for plate inventory control
+
+30/12/2014
+Added advanced plate search
+Added plate box contents editing
+
+29/12/2014
+Fixed bug in ticket reprinting
+Made adjustments to menu navigation
+Final confirmation processing adjusted
+Added preliminary plate box inventory control
+
+18/12/2014
+Mass re-printing of roll tickets implemented - may have a few bugs needs more testing for different UOM.
+
+01/12/2014
+Multiple bug fixes.
+Pallet label screen modified to handle items accurately.
+RTS & Reject items differentiated if a merged roll is processed.
+
+19/09/2014
+Recalculate Difference is back in the symple time entry.
+
+18/09/2014
+Right-Click Summary to edit run values - this is not saved.
+Right-Click Summary to display your numbers for the tier 1 board.
+Right-Click Report to edit IN Weights etc.
+Left-Click on date to add Day (Shift+Left-Click to subract day).
+Adding totals in Summary and Report is now possible (Like before)
+To add-up mulitple sections, hold down the CTRL key.
+Double-Click the "Required" box to modify the required amount.
+Double-Click the "UOM" box to modify the Unit Of Measure.
